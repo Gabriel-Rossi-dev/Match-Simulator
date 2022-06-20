@@ -1,4 +1,4 @@
-package com.example.simulator
+    package com.example.simulator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
