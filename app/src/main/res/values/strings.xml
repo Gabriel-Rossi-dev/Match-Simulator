@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Simulator</string>
     <string name="fab_Simulate">Match Simulator Button</string>
+    <string name="home_team_flag">Home Team Flag</string>
+    <string name="away_team_flag">Away Team Flag</string>
+    <string name="home_team_name">Home Team Name</string>
+    <string name="home_name_team">Home Team</string>
+    <string name="away_team_name">Away Team</string>
+    <string name="name_away_team">Away Team Name</string>
+    <string name="versus">vs</string>
+    <string name="versus_simbol">X</string>
+    <string name="gols_home_team">99</string>
+    <string name="home_team_gols">Gols Home Team</string>
+    <string name="away_team_gols">99</string>
+    <string name="gols_away_team">Away Team Gols</string>
 </resources>

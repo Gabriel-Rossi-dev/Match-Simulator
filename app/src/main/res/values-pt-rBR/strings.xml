@@ -2,4 +2,16 @@
 <resources>
     <string name="app_name">Simulador</string>
     <string name="fab_Simulate">Butao para simular partidas</string>
+    <string name="home_team_flag">Bandeira do Time Mandante</string>
+    <string name="away_team_flag">Bandeira do Time Visitante</string>
+    <string name="home_team_name">Nome do Time Mandante</string>
+    <string name="home_name_team">Time Mandante</string>
+    <string name="away_team_name">Time Visitante</string>
+    <string name="name_away_team">Nome do Time Visitante</string>
+    <string name="versus">vs</string>
+    <string name="versus_simbol">X</string>
+    <string name="gols_home_team">99</string>
+    <string name="home_team_gols">Gols Time Mandante</string>
+    <string name="away_team_gols">99</string>
+    <string name="gols_away_team">Gols Time Visitante</string>
 </resources>

@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/workspace/app/src/main/res/drawable/ic_dice.xml" value="0.296" />
         <entry key="..\:/workspace/app/src/main/res/drawable/ic_launcher_background.xml" value="0.296" />
-        <entry key="..\:/workspace/app/src/main/res/layout/activity_main.xml" value="1.1" />
+        <entry key="..\:/workspace/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/workspace/app/src/main/res/layout/match_item.xml" value="0.6600741656365884" />
       </map>
     </option>
   </component>
