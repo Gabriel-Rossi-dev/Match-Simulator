@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Simulator</string>
+    <string name="fab_Simulate">Match Simulator Button</string>
 </resources>
