@@ -3,94 +3,96 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="200dp">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:contentDescription="@string/home_team_flag"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/ivHomeTeamFlag"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:contentDescription="@string/cd_home_team_flag"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:contentDescription="@string/away_team_flag"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:id="@+id/ivAwayTeamFlag"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:contentDescription="@string/cd_away_team_flag"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:contentDescription="@string/home_team_name"
+            android:id="@+id/tvHomeTeamName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:contentDescription="@string/cd_home_team_name"
             android:text="@string/home_name_team"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintEnd_toEndOf="@+id/ivHomeTeamFlag"
+            app:layout_constraintStart_toStartOf="@+id/ivHomeTeamFlag"
+            app:layout_constraintTop_toBottomOf="@+id/ivHomeTeamFlag" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:contentDescription="@string/name_away_team"
+            android:id="@+id/tvAwayTeamName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:contentDescription="@string/cd_name_away_team"
             android:text="@string/away_team_name"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintEnd_toEndOf="@+id/ivAwayTeamFlag"
+            app:layout_constraintStart_toStartOf="@+id/ivAwayTeamFlag"
+            app:layout_constraintTop_toBottomOf="@+id/ivAwayTeamFlag" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:contentDescription="@string/versus"
+            android:id="@+id/tvVersus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_versus"
             android:text="@string/versus_simbol"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeamFlag"
+            app:layout_constraintEnd_toStartOf="@+id/ivAwayTeamFlag"
+            app:layout_constraintStart_toEndOf="@+id/ivHomeTeamFlag"
+            app:layout_constraintTop_toTopOf="@+id/ivAwayTeamFlag" />
 
         <TextView
-            android:id="@+id/textView5"
-            android:contentDescription="@string/home_team_gols"
+            android:id="@+id/tvGolsHomeTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:contentDescription="@string/cd_home_team_gols"
             android:text="@string/gols_home_team"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeamFlag"
+            app:layout_constraintStart_toEndOf="@+id/ivHomeTeamFlag"
+            app:layout_constraintTop_toTopOf="@+id/ivHomeTeamFlag" />
 
         <TextView
-            android:id="@+id/textView6"
-            android:contentDescription="@string/gols_away_team"
+            android:id="@+id/tvGolsAwayTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:contentDescription="@string/cd_gols_away_team"
             android:text="@string/away_team_gols"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeamFlag"
+            app:layout_constraintEnd_toStartOf="@+id/ivAwayTeamFlag"
+            app:layout_constraintTop_toTopOf="@+id/ivAwayTeamFlag" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
