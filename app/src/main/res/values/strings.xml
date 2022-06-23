@@ -16,4 +16,6 @@
     <string name="cd_swipe_refresh_layout">Swipe Refresh Layout</string>
     <string name="cd_recycler_view">Recycler View</string>
     <string name="cd_constraint_layout">Constraint Layout</string>
+    <string name="error_api">Unexpected error</string>
+    <string name="api_error">unexpected error</string>
 </resources>
