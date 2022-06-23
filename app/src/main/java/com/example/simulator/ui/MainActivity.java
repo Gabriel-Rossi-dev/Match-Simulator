@@ -9,7 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.simulator.ui.adapter.MatchesAdapter;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Collections;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesAPI matchesApi;
+    private RecyclerView.Adapter matchesAdapter;
 
 
     @Override
@@ -55,12 +58,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupMatchesList() {
+        binding.rvMatch.setHasFixedSize(true);
+        binding.rvMatch.setLayoutManager( new LinearLayoutManager(this));
         matchesApi.getMatches().enqueue(new Callback<List<Match>>() {
             @Override
             public void onResponse(Call<List<Match>> call, Response<List<Match>> response) {
                 if (response.isSuccessful()){
                     List<Match> matches = response.body();
-                    Log.i("SIMULATOR", "Deu tudo certo! Partidas: " + matches.size());
+                    matchesAdapter = new MatchesAdapter(matches);
+                    binding.rvMatch.setAdapter(matchesAdapter);
                 }else {
                     showErrorMessage();
                 }
