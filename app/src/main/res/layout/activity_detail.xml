@@ -106,8 +106,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
                 app:layout_constraintEnd_toStartOf="@+id/tvVersus"
                 app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
-                app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
-                tools:text="99" />
+                app:layout_constraintTop_toTopOf="@+id/ivHomeTeam" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVersus"
@@ -160,8 +159,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
                 app:layout_constraintEnd_toStartOf="@+id/ivAwayTeam"
                 app:layout_constraintStart_toEndOf="@+id/tvVersus"
-                app:layout_constraintTop_toTopOf="@+id/ivAwayTeam"
-                tools:text="99" />
+                app:layout_constraintTop_toTopOf="@+id/ivAwayTeam" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

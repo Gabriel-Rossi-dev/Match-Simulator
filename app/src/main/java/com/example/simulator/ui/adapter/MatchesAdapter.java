@@ -22,6 +22,10 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
         this.matches = matches;
     }
 
+    public List<Match> getMatches() {
+        return matches;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -36,13 +40,17 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
         Match match = matches.get(position);
 
 
-
         //Addapta os dados da partida (Recuperada da API) para o nosso layout
         Glide.with(context).load(match.getHomeTeam().getImage()).circleCrop().into(holder.binding.ivHomeTeamFlag);
         holder.binding.tvHomeTeamName.setText(match.getHomeTeam().getName());
+        if (match.getHomeTeam().getScore() != null) {
+            holder.binding.tvGolsHomeTeam.setText(String.valueOf(match.getHomeTeam().getScore()));
+        }
         Glide.with(context).load(match.getAwayTeam().getImage()).circleCrop().into(holder.binding.ivAwayTeamFlag);
         holder.binding.tvAwayTeamName.setText(match.getAwayTeam().getName());
-
+        if (match.getAwayTeam().getScore() != null) {
+            holder.binding.tvGolsAwayTeam.setText(String.valueOf(match.getAwayTeam().getScore()));
+        }
 
 
     }

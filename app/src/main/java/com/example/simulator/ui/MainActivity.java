@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesAPI matchesApi;
-    private RecyclerView.Adapter matchesAdapter;
+    private MatchesAdapter matchesAdapter;
 
 
     @Override
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         setupHttpClient();
         setupMatchesList();
         setupMatchesRefresh();
+        setupFloatActionButton();
 
     }
 
@@ -60,6 +61,34 @@ public class MainActivity extends AppCompatActivity {
     private void setupMatchesList() {
         binding.rvMatch.setHasFixedSize(true);
         binding.rvMatch.setLayoutManager( new LinearLayoutManager(this));
+        findMatchesFromApi();
+
+    }
+
+    private void setupMatchesRefresh() {
+        binding.srlMatch.setOnRefreshListener(this::findMatchesFromApi);
+    }
+
+    private void setupFloatActionButton() {
+        binding.fabRandomMatch.setOnClickListener(view -> {
+            view.animate().rotationBy(360).setDuration(500).setListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    Random random = new Random();
+                    for (int i = 0; i < matchesAdapter.getItemCount(); i++) {
+                        Match match = matchesAdapter.getMatches().get(i);
+                        match.getHomeTeam().setScore(random.nextInt(match.getHomeTeam().getStars() + 1));
+                        match.getAwayTeam().setScore(random.nextInt(match.getAwayTeam().getStars() + 1));
+                        matchesAdapter.notifyItemChanged(i);
+                    }
+                }
+            });
+        });
+    }
+
+
+    private void findMatchesFromApi() {
+        binding.srlMatch.setRefreshing(true);
         matchesApi.getMatches().enqueue(new Callback<List<Match>>() {
             @Override
             public void onResponse(Call<List<Match>> call, Response<List<Match>> response) {
@@ -70,22 +99,15 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     showErrorMessage();
                 }
+                binding.srlMatch.setRefreshing(false);
             }
 
             @Override
             public void onFailure(Call<List<Match>> call, Throwable t) {
-                    showErrorMessage();
+                showErrorMessage();
+                binding.srlMatch.setRefreshing(false);
             }
         });
-
-    }
-
-    private void setupMatchesRefresh() {
-        //TODO Atualizar as partidas na ação swipe.
-    }
-
-    private void setupFloatActionButton() {
-        //TODO Criar envento de click e simulação de partidas.
     }
 
 
