@@ -1,6 +1,7 @@
 package com.example.simulator.ui.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.simulator.databinding.MatchItemBinding;
 import com.example.simulator.domain.Match;
+import com.example.simulator.ui.DetailActivity;
 
 import java.util.List;
 
@@ -52,6 +54,11 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
             holder.binding.tvGolsAwayTeam.setText(String.valueOf(match.getAwayTeam().getScore()));
         }
 
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(context, DetailActivity.class);
+            intent.putExtra(DetailActivity.Extras.MATCH, match);
+            context.startActivity(intent);
+        });
 
     }
 

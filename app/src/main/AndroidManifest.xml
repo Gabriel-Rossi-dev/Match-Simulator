@@ -28,8 +28,8 @@
 
             android:name=".ui.DetailActivity"
             android:exported="true"
-            android:theme="@style/Theme.Simulator.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Simulator.NoActionBar"
+            android:parentActivityName=".ui.MainActivity"/>
     </application>
 
 </manifest>
