@@ -43,6 +43,8 @@
   Caso os resultados ja estivessem aparentes na tela inicial, esses se manterão na tela de detalhes.
    
  ![detail](https://user-images.githubusercontent.com/104375832/176181163-25e1c3e8-370c-4dd0-a588-5731005ae0df.png)
+ 
+ <h2> Firebase robot <h2>
 
  
     
