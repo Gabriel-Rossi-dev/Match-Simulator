@@ -14,6 +14,7 @@
   
 <h2> Floating Action Button adicionado para randomização dos resultados<h2>
    Ao Clicar no botão flutuante, os resultados das partidas são alterados de forma aleatória, porém, dependendo da força do time ele tem mais probabilidade de fazer gols, sendo o máximo 5 que é o máximo de estrelas.
+ 
 ![fab](https://user-images.githubusercontent.com/104375832/176179492-0cf47c78-0757-42a5-aae8-351b5ccc347d.png)
  
 <h2> Swipe Refresh Layout <h2>
