@@ -21,6 +21,8 @@
    Ao Clicar no botão flutuante, os resultados das partidas são alterados de forma aleatória, porém, dependendo da força do time ele tem mais probabilidade de fazer gols, sendo o máximo 5 que é o máximo de estrelas.
  
 ![fab](https://user-images.githubusercontent.com/104375832/176179492-0cf47c78-0757-42a5-aae8-351b5ccc347d.png)
+
+
  
  
  
@@ -45,6 +47,8 @@
  ![detail](https://user-images.githubusercontent.com/104375832/176181163-25e1c3e8-370c-4dd0-a588-5731005ae0df.png)
  
  <h2> Firebase robot <h2>
+ 
+ ![firebase](https://storage.cloud.google.com/test-lab-nf1i79vayy6yq-jutti4td0cijq/web-build_20220628_5ob1/redfin-30-en_US-portrait/artifacts/output/sitemap.png?authuser=1)
 
  
     
