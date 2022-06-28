@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesAPI matchesApi;
-    private MatchesAdapter matchesAdapter;
+    private MatchesAdapter matchesAdapter = new MatchesAdapter(Collections.emptyList());
 
 
     @Override
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupMatchesList() {
         binding.rvMatch.setHasFixedSize(true);
         binding.rvMatch.setLayoutManager( new LinearLayoutManager(this));
+        binding.rvMatch.setAdapter(matchesAdapter);
         findMatchesFromApi();
 
     }
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupFloatActionButton() {
         binding.fabRandomMatch.setOnClickListener(view -> {
+
             view.animate().rotationBy(360).setDuration(500).setListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationEnd(Animator animation) {
@@ -85,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
             });
         });
     }
+
+
 
 
     private void findMatchesFromApi() {

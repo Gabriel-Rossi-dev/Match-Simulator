@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144004362440",
+    "project_id": "simulator-matches-app",
+    "storage_bucket": "simulator-matches-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144004362440:android:9463c483e026757436f5fd",
+        "android_client_info": {
+          "package_name": "com.example.simulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144004362440-8i2fk5pr6onnj32js78615ni3qul06am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ96rlhE2jx13o7I6C9B_B-f6gtb92ULw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144004362440-8i2fk5pr6onnj32js78615ni3qul06am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
