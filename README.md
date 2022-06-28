@@ -7,9 +7,9 @@
  As bandeiras, a força do time (estrelas) e a imagem do campo são renderizadas através de uma API.
  
 <h2> Tela inicial do app <h2>
- <div align="center"
-img src="(https://user-images.githubusercontent.com/104375832/176178913-1dc38fb7-4152-4765-83d3-f63a2b6bc2e1.png)" width="0px" 
-/div>
+ 
+![Screen](https://user-images.githubusercontent.com/104375832/176182193-106445a6-7064-4720-a6f1-acf8cf45bc91.png) 
+
 
   
 <h2> Floating Action Button adicionado para randomização dos resultados<h2>
