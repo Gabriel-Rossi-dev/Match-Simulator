@@ -46,9 +46,6 @@
    
  ![detail](https://user-images.githubusercontent.com/104375832/176181163-25e1c3e8-370c-4dd0-a588-5731005ae0df.png)
  
- <h2> Firebase robot <h2>
- 
 
- ![web-build_20220628_5ob1_redfin-30-en_US-portrait_artifacts_output_sitemap](https://user-images.githubusercontent.com/104375832/176234846-ec199dd9-dd10-447b-9209-21dd56f951e9.png)
 
     
