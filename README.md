@@ -7,7 +7,7 @@
  As bandeiras, a força do time (estrelas) e a imagem do campo são renderizadas através de uma API.
  
 <h2> Tela inicial do app <h2>
-![Screen](https://user-images.githubusercontent.com/104375832/176178913-1dc38fb7-4152-4765-83d3-f63a2b6bc2e1.png)
+(https://user-images.githubusercontent.com/104375832/176178913-1dc38fb7-4152-4765-83d3-f63a2b6bc2e1.png)
   
 <h2> Floating Action Button adicionado para randomização dos resultados<h2>
    Ao Clicar no botão flutuante, os resultados das partidas são alterados de forma aleatória, porém, dependendo da força do time ele tem mais probabilidade de fazer gols, sendo o máximo 5 que é o máximo de estrelas.
