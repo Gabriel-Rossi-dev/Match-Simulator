@@ -38,7 +38,7 @@
 
  <h2> Detail Activity <h2>
   
-  <h3> Tela de detalhe de partida h3>
+  <h3> Tela de detalhe de partida <h3>
    
    Quando é clicado em uma partida, essa abrirá uma tela de detalhe com a força dos times representados por uma rating bar e mostrará uma imagem do campo que acontece o jogo.
    
