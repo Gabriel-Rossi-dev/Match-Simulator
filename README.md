@@ -10,7 +10,8 @@
  
 <h2> Tela inicial do app <h2>
  
-![Screen](https://user-images.githubusercontent.com/104375832/176182193-106445a6-7064-4720-a6f1-acf8cf45bc91.png) 
+ <img width="320" src="[url_da_imagem](https://user-images.githubusercontent.com/104375832/176182193-106445a6-7064-4720-a6f1-acf8cf45bc91.png)">
+
  
  
 
