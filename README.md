@@ -5,8 +5,8 @@
 
  
  <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gabriel-Rossi-dev/Match-Simulator"/>
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Gabriel-Rossi-dev/Match-Simulator" />
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gabriel-Rossi-dev/Match-Simulator-App"/>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Gabriel-Rossi-dev/Match-Simulator-App" />
 </p>
  
  O app tem como objetivo randomizar resultados de partidas de futebol.
