@@ -2,6 +2,12 @@
 
 
 <h3>App desenvolvido em Kotlin como simulador de partidas de futebol.<h3>
+
+ 
+ <p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gabriel-Rossi-dev/Match-Simulator"/>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Gabriel-Rossi-dev/Match-Simulator" />
+</p>
  
  O app tem como objetivo randomizar resultados de partidas de futebol.
  As bandeiras, a força do time (estrelas) e a imagem do campo são renderizadas através de uma API.
