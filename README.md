@@ -12,7 +12,11 @@
  O app tem como objetivo randomizar resultados de partidas de futebol.
  As bandeiras, a força do time (estrelas) e a imagem do campo são renderizadas através de uma API.
  
- 
+ <h2> Ícone do app <h2>
+
+  <p align="center">
+   <img  src="https://user-images.githubusercontent.com/104375832/178524442-61484deb-95e6-489f-a6fe-518179050e44.jpg">
+  </p>
  
 <h2> Tela inicial do app <h2>
  
